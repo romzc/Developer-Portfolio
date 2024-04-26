@@ -50,7 +50,7 @@ export default function Home() {
                 <Link className='text-lg font-semibold hover:bg-light hover:text-dark
                   flex items-center bg-dark text-light p-2.5 px-6 rounded-lg
                   border border-solid border-transparent hover:border-dark'
-                  href="/CV_RONY.pdf" 
+                  href="/CV_RONY_2.pdf" 
                   target='_blank'
                 >
                   CV
