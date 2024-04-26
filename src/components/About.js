@@ -3,9 +3,9 @@ import React from 'react'
 import profileImage from '../../public/images/profile/developer_rony_image.jpg'
 import { AnimatedText } from './AnimatedText'
 
-const About = () => {
+const About = ({id}) => {
   return (
-    <div className='flex flex-col w-full mt-16 gap-12 items-center align-middle'>
+    <div className='flex flex-col w-full mt-16 gap-12 items-center align-middle' id={id}>
       <AnimatedText text="Acerca de mí" className='col-span-2'/>
       <div className='flex justify-center gap-4'>
         <div className='max-w-[28rem]'>

@@ -6,17 +6,22 @@ import { GithubIcon, LinkedInIcon } from "./Icons"
 import { motion } from "framer-motion"
 
 const CustomLink = ({href, title, className = ""}) => {
-  const router = useRouter();
+  const handleClick = (e) => {
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <a href={href} className={`${className} relative group`} onClick={handleClick}>
       {title}
       <span className={`h-[1px] inline-block
         bg-dark absolute left-0 -bottom-0.5 group-hover:w-full
-        transition-[width] ease duration-300
-        ${router.asPath === href ? 'w-full' : 'w-0'}`}>
+        transition-[width] ease duration-300`}>
         &nbsp;
       </span>
-    </Link>
+    </a>
   )
 }
 
@@ -24,9 +29,9 @@ export const NavBar = () => {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
       <nav>
-        <CustomLink href="/" title="Inicio" className="mr-4"/>
-        <CustomLink href="/about" title="Acerca de" className="mx-4" />
-        <CustomLink href="/projects" title="Proyectos" className="ml-4"/>
+        <CustomLink href="#inicio" title="Inicio" className="mr-4"/>
+        <CustomLink href="#about" title="Acerca de" className="mx-4" />
+        <CustomLink href="#projects" title="Proyectos" className="ml-4"/>
       </nav>
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a  
