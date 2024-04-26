@@ -10,8 +10,14 @@ const About = () => {
       <div className='flex justify-center gap-4'>
         <div className='max-w-[28rem]'>
           <p className='mb-2 font-medium'>
-            Hola, soy desarrollador de aplicaciones móviles para dispositivos Android. 
-            Me enfóco en crear soluciones innovadoras y eficientes, siempre buscando formas de mejorar la experiencia del usuario.
+            {/*
+              Hola, soy desarrollador de aplicaciones móviles para dispositivos Android. 
+              Me enfóco en crear soluciones innovadoras y eficientes, siempre buscando formas de mejorar la experiencia del usuario.
+            */}
+
+            Hola, soy desarrollador de aplicaciones Web empleando tecnologías como React, Material Design, etc. 
+            Me enfóco en crear soluciones innovadoras y eficientes,
+            siempre buscando formas de mejorar la experiencia del usuario.
           </p>
           <div>
             <h2 className='text-2xl font-bold'>Experiencia</h2>
@@ -23,7 +29,7 @@ const About = () => {
               cambios solicitados por el cliente empleando la metodología ágil Scrum.
               Tuve el rol de desarrollador frontend en el proyecto conjunto  el cual
                consistía en el desarrollo e implementación de un CRM"
-              technologies={['React','Tailwind','Material UI']}              
+              technologies={['React','Tailwind','Material UI', 'CSS','DJANGO']}              
             />
             <h2 className='text-2xl font-bold'>Logros académicos</h2>
             <ListItem 
@@ -32,7 +38,7 @@ const About = () => {
               company="KOICA"
               work="Finalista del hackton organizado por KOICA-UNSA, encargado de implementar
                las interfaces de usuario del aplicativo móvil empleando el entorno de android y Jetpack Compose."
-              technologies={['Jetpack Compose', 'Android']}
+              technologies={['Jetpack Compose', 'Android', 'AWS']}
             />
           </div>
         </div>
@@ -51,10 +57,10 @@ const ListItem = ({position = "", time = "", company = "", work = "", technologi
       <h4 className='font-bold text-orange-700'>{company}</h4>
       <h4 className='italic text-sm'>{time}</h4>
       <p className='font-medium'>{work}</p>
-      <div className='my-2 -mx-2'>
+      <div className='my-2 -mx-1'>
         {
           technologies.map((item, index)=> <span 
-            className='mx-2 bg-dark rounded-lg text-light p-2 text-sm hover:bg-light hover:text-dark border border-solid border-dark cursor-pointer' 
+            className='mx-1 bg-dark rounded-lg text-light p-2 text-sm hover:bg-light hover:text-dark border border-solid border-dark cursor-pointer' 
             key={index}
           >
             {item}

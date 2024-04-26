@@ -28,13 +28,19 @@ export default function Home() {
               <Image src={profilePic} alt="Rony Ventura" className="w-full h-auto"/>
             </div>
             <div className='w-1/2 flex flex-col items-center self-center'>
-             <h3> Rony Ventura Ramos | Android Developer</h3> 
+             <h3> Rony Ventura Ramos | {/*Android Developer*/} Desarrollador Web</h3> 
               <AnimatedText text={"Transformar ideas en realidad."} className='!text-6xl !text-left'/>
               <p className='my-4 text-base font-medium'>
-                Como desarrollador de aplicaciones móviles, me apasiona transformar
-                ideas innovadoras en soluciones prácticas y funcionales. Mi experiencia
-                en el desarrollo de aplicaciones para la plataforma Android
-                me permite crear productos digitales con interfaces intuitivas. 
+                {/*
+                  Como desarrollador de aplicaciones móviles, me apasiona transformar
+                  ideas innovadoras en soluciones prácticas y funcionales. Mi experiencia
+                  en el desarrollo de aplicaciones para la plataforma Android
+                  me permite crear productos digitales con interfaces intuitivas. 
+                */}
+                  Como desarrollador web, me apasiona convertir ideas innovadoras en soluciones prácticas
+                  y funcionales en el mundo digital. Me enfoco en crear productos digitales con interfaces intuitivas y experiencias de
+                  usuario fluidas. Estoy comprometido en aprovechar las últimas tecnologías y tendencias
+                  del desarrollo web para ofrecer resultados excepcionales a mis clientes y usuarios finales.
               </p>
               <div className='flex items-center self-start mt-2'>
                 <Link className='text-lg font-semibold hover:bg-light hover:text-dark

@@ -39,10 +39,15 @@ const Card = ({ image, title, description, technologies }) => {
         <h2 className='text-xl font-bold mb-2'>{title}</h2>
         <p className='text-gray-700 mb-4'>{description}</p>
         <div className='technologies'>
-          <h3 className='text-lg font-semibold'>Tecnologías:</h3>
-          <ul className='list-disc list-inside'>
+          <h3 className='text-base font-semibold'>Tecnologías: </h3>
+          <ul className='flex gap-2'>
             {technologies.map((tech, index) => (
-              <li key={index} className='text-gray-600'>{tech}</li>
+              <li 
+                key={index} 
+                className='bg-dark text-light p-1 text-sm rounded-lg shadow-lg '
+              >
+                {tech}
+              </li>
             ))}
           </ul>
         </div>

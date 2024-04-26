@@ -11,8 +11,10 @@ const Skills = () => {
            bg-dark text-light p-8 shadow-dark cursor-pointer'
            whileHover={{scale: 1.05}}
         >
-          Android
+          Web
         </motion.div>
+        {/* Skills about Android developer.
+          Android
         <Skill name='1. Room Database' x="-12vw" y="-20vw"/>
         <Skill name='2. Jetpack Compose' x="-10vw" y="-10vw"/>
         <Skill name='3. Retrofit' x="8vw" y="-16vw"/>
@@ -26,6 +28,25 @@ const Skills = () => {
         <Skill name='11. Firebase' x="20vw" y="-20vw"/>
         <Skill name='12. Java' x="-28vw" y="-10vw"/>
         <Skill name='13. Figma' x="-28vw" y="-16vw"/>
+      */}
+      <Skill name='1. React' x="-12vw" y="-20vw"/>
+      <Skill name='2. HTML' x="-10vw" y="-10vw"/>
+      <Skill name='3. CSS' x="8vw" y="-16vw"/>
+      <Skill name='4. Javascript' x="-10vw" y="10vw"/>
+      <Skill name='5. SASS' x="10vw" y="10vw"/>
+      <Skill name='6. Zustand' x="20vw" y="-15vw"/>
+      <Skill name='7. Axios' x="20vw" y="0vw"/>
+      <Skill name='8. Postgresql' x="20vw" y="-10vw"/>
+      <Skill name='9. Django' x="-32vw" y="0vw"/>
+      <Skill name='10. MVC' x="-20vw" y="0vw"/>
+      <Skill name='11. SEO' x="20vw" y="-20vw"/>
+      <Skill name='13. Figma' x="-28vw" y="-16vw"/>
+        {/*
+
+
+
+
+        */}
       </div>
 
     </React.Fragment>
